@@ -20,7 +20,6 @@ def decrypt(cipher):
 
 if __name__ == "__main__":
 	plain = str(input("Enter text to encrypt: ").replace(" ",""))
-	print(plain)
-	print("Encrypted text : "+encrypt(plain.lower()))
+	print("Encrypted text : "+encrypt(plain.upper()))
 	cipher = str(input("Enter text to decrypt: ").replace(" ",""))
 	print("Decrypted text : "+decrypt(cipher.upper()))
